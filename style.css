@@ -48,7 +48,7 @@
 
 .navbar {
   justify-content: space-between;
-  background-color: bisque;
+  /* background-color: bisque; */
   align-items: center;
 
 }
@@ -72,7 +72,8 @@
 
 .brand {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
+
 }
 
 /* banner related style  */
@@ -87,6 +88,7 @@
 .banner-titel {
   font-weight: 700;
   font-size: 4rem;
+  margin-bottom: 15px;
 }
 
 .banner img {
@@ -149,7 +151,7 @@ main>section {
 
 }
 
-#one{
+#one {
   border-left: 5px solid #FF900E;
   padding-left: 20px;
 
@@ -260,12 +262,13 @@ main>section {
   width: 100%;
 }
 
-.team-feature-image #exp{
+.team-feature-image #exp {
   font-size: 4rem;
   font-weight: 700;
 
 }
-.exp{
+
+.exp {
   margin-left: -100px;
   margin-top: -100px;
 }
@@ -275,8 +278,9 @@ main>section {
   .team-feature {
     flex-direction: column;
   }
-  .exp{
-    margin-left:100px;
+
+  .exp {
+    margin-left: 100px;
 
   }
 
@@ -374,13 +378,15 @@ main>section {
 
 /* card responsive  */
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
 
-  .card-boxs{
-    grid-template-columns: repeat(1 , 1fr);
-    row-gap:20px;
+  .card-boxs {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
   }
-  .titel h1 , p{
+
+  .titel h1,
+  p {
     text-align: center;
   }
 
@@ -389,11 +395,13 @@ main>section {
 /* tab  */
 @media screen and (min-width:576px) and (max-width:992px) {
 
-  .card-boxs{
-    grid-template-columns: repeat(2 , 1fr);
-    row-gap:20px;
+  .card-boxs {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
   }
-  .titel h1 , p{
+
+  .titel h1,
+  p {
     text-align: center;
   }
 
@@ -402,49 +410,54 @@ main>section {
 
 /* Our Sponspors  */
 
-.Sponspors-containe{
+.Sponspors-containe {
   max-width: 1440px;
   margin: 0 auto;
   border: 2px solid red;
 }
-.content h1{
+
+.content h1 {
   color: rgb(19, 19, 19);
-font-family: Work Sans;
-font-size: 2rem;
-font-weight: 700;
-line-height: 53px;
-letter-spacing: 0%;
-text-align: center;
-  
+  font-family: Work Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: center;
+
 }
-.content p{
+
+.content p {
   color: rgb(114, 114, 114);
-font-family: Work Sans;
-font-size: 1rem;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: center;
-margin-top: 10px;
-margin-bottom: 30px;
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 
 }
-.content-icons{
+
+.content-icons {
   display: grid;
-  grid-template-columns: repeat(5,2fr);
+  grid-template-columns: repeat(5, 2fr);
 
 
-  
+
 
 }
-.content-icons .icon-1{
+
+.content-icons .icon-1 {
   justify-self: center;
 
   width: 116.76px;
   height: 40px;
 
 }
-.content-icons img{
+
+.content-icons img {
   width: 100%;
   height: 100%;
   filter: grayscale(100%);
@@ -452,13 +465,40 @@ margin-bottom: 30px;
 
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
 
-  .content-icons{
+  .content-icons {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
- 
+
   }
- 
+
+
+}
+
+/* footer  */
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100px;
+  display: grid;
+  place-items: center;
+
+  border-radius: 8px;
+
+  background: rgb(255, 244, 231);
+  margin-top: 40px;
+}
+
+.footer p {
+  color: rgb(66, 66, 66);
+  font-family: Work Sans;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+
 
 }
